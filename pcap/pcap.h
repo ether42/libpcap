@@ -341,6 +341,7 @@ PCAP_API int	pcap_set_buffer_size(pcap_t *, int);
 PCAP_API int	pcap_set_tstamp_precision(pcap_t *, int);
 PCAP_API int	pcap_get_tstamp_precision(pcap_t *);
 PCAP_API int	pcap_activate(pcap_t *);
+PCAP_API int	pcap_set_control_keepalive(pcap_t *, int, int, int, int);
 
 PCAP_API int	pcap_list_tstamp_types(pcap_t *, int **);
 PCAP_API void	pcap_free_tstamp_types(int *);
